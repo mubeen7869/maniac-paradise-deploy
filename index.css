@@ -324,6 +324,8 @@ nav ul li a:hover {
     background: #0056b3; /* Darker blue for hover effect */
 }
 
+
+
 .training-box img {
     position: absolute;
     width: 400px; /* Size of the images */
@@ -344,6 +346,9 @@ nav ul li a:hover {
     left: 20px; /* 20px from the left of the training-box */
     position: fixed;
 }
+
+
+
 
 
 
@@ -470,17 +475,95 @@ h1 {
     font-size: 2rem; /* Scales with body font size */
 }
 
-@media (min-width: 768px) {
-    body {
-        font-size: 1.125rem;
-    }
-}
 
-.container {
-    width: 100%;
-    max-width: 1200px; /* Optional: Limits maximum width */
-    margin: 0 auto; /* Centers container */
-    padding: 0 15px;
+
+
+
+
+/* Mobile view (max-width: 767px) */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px; /* Smaller font size for better readability on mobile */
+        line-height: 1.5;
+    }
+
+    header {
+        padding: 10px; /* Smaller padding to save space */
+        text-align: center; /* Center header content */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add margin between menu items */
+    }
+
+    .locate-us, .social-buttons {
+        margin: 20px 0; /* Add margin above and below these sections */
+        text-align: center; /* Center the content */
+    }
+
+    .locate-us a, .social-buttons a {
+        width: 100%; /* Make buttons full-width */
+        padding: 10px; /* Adjust padding for better tap targets */
+        text-align: center;
+    }
+
+    #hero {
+        padding: 3rem 1rem; /* Adjust padding for better spacing on mobile */
+    }
+
+    .cta-button {
+        padding: 10px 20px; /* Adjust padding */
+        font-size: 1rem; /* Slightly smaller font size */
+        width: 100%; /* Full-width button on mobile */
+    }
+
+    #about, #services, #contact, #gallery {
+        padding: 1.5rem 1rem; /* Reduce padding to fit content better */
+    }
+
+    .service-item, .gallery-images img {
+        font-size: 1.2rem; /* Adjust font size for mobile */
+        margin-bottom: 1rem; /* Adjust margin */
+    }
+
+    .gallery-images {
+        grid-template-columns: 1fr; /* Single column layout on mobile */
+        gap: 1rem; /* Reduce gap between images */
+    }
+
+    .training-box {
+        height: 300px; /* Reduce height to fit smaller screens */
+    }
+
+    .white-box, .content-box {
+        width: 100%; /* Full width for mobile */
+        left: 0; /* Adjust position */
+        transform: none; /* Remove centering transform */
+    }
+
+    .white-box h3, .content-box h3 {
+        font-size: 20px; /* Smaller font size for headings */
+    }
+
+    .white-box p, .content-box p {
+        font-size: 14px; /* Smaller font size for paragraphs */
+    }
+
+    .visit-button {
+        width: 100%; /* Full width for buttons */
+        padding: 15px 0; /* Larger padding for better tap targets */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    footer {
+        padding: 10px; /* Smaller padding */
+        font-size: 0.9rem; /* Adjust font size */
+    }
 }
 
 
